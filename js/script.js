@@ -282,8 +282,8 @@ function printGraph() {
                 "Clearance: " + matrix[i]["slack"] + "\n" +
                 "Early Start (ES): " + matrix[i]["startEarly"] + "\n" +
                 "Late Start (LS): " + matrix[i]["startLate"] + "\n" +
-                "Finish First: " + matrix[i]["endEarly"] + "\n" +
-                "Finish End: " + matrix[i]["endLate"]
+                "Early Finish (EF): " + matrix[i]["endEarly"] + "\n" +
+                "Late Finish (LF): " + matrix[i]["endLate"]
         });
     }
     nodes.push({
@@ -298,8 +298,8 @@ function printGraph() {
             graph.end.name + "\n\n" +
             "Early Start (ES): " + graph.end.startEarly + "\n" +
             "Late Start (LS): " + graph.end.startLate + "\n" +
-            "Finish First: " + graph.end.endEarly + "\n" +
-            "Finish End: " + graph.end.endLate,
+            "Early Finish (EF): " + graph.end.endEarly + "\n" +
+            "Late Finish (LF): " + graph.end.endLate,
         color: { background: '#dc3545' },
         level: 3,
     });
